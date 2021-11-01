@@ -53,7 +53,7 @@ namespace MegaDeskRazorPages.Pages.Quotes
                 await _context.SaveChangesAsync();
             }
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./ViewAllQuotes");
         }
     }
 }

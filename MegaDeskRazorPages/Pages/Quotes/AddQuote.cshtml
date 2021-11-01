@@ -48,20 +48,16 @@
                 <input asp-for="DeskQuote.RushDays" class="form-control" />
                 <span asp-validation-for="DeskQuote.RushDays" class="text-danger"></span>
             </div>
-            <div class="form-group" style="display:none">
-                <label asp-for="DeskQuote.QuoteTotal" class="control-label"></label>
-                <input asp-for="DeskQuote.QuoteTotal" class="form-control" />
-                <span asp-validation-for="DeskQuote.QuoteTotal" class="text-danger"></span>
-            </div>
             <div class="form-group">
                 <input type="submit" value="Add Quote" class="btn btn-primary" />
+
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="ViewAllQuotes">Back to List</a>
+    <a asp-page="../Index">Home</a>
 </div>
 
 @section Scripts {

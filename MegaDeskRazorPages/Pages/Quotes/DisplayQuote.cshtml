@@ -1,4 +1,65 @@
 ﻿@page
 @model MegaDeskRazorPages.Pages.Quotes.DisplayQuoteModel
 @{
+    ViewData["Title"] = "DisplayQuote";
 }
+
+<h1>Quote Summary</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DeskQuote.CustomerName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DeskQuote.CustomerName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DeskQuote.QuoteDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DeskQuote.QuoteDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DeskQuote.Width)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DeskQuote.Width)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DeskQuote.Depth)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DeskQuote.Depth)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DeskQuote.NumberOfDrawers)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DeskQuote.NumberOfDrawers)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DeskQuote.DeskMaterial)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DeskQuote.DeskMaterial)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DeskQuote.RushDays)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DeskQuote.RushDays)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DeskQuote.QuoteTotal)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DeskQuote.QuoteTotal)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-page="../Index">Home</a>
+</div>
