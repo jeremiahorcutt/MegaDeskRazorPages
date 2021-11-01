@@ -1,13 +1,13 @@
 ﻿@page
-@model MegaDeskRazorPages.Pages.Quotes.CreateModel
+@model MegaDeskRazorPages.Pages.Quotes.AddQuoteModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "AddQuote";
 }
 
-<h1>Create</h1>
+<h1>Add New Quote</h1>
 
-<h4>DeskQuote</h4>
+<h4>Desk Parameters</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -20,13 +20,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="DeskQuote.QuoteDate" class="control-label"></label>
-                <input asp-for="DeskQuote.QuoteDate" class="form-control" />
+                <input asp-for="DeskQuote.QuoteDate" class="form-control" type="datetime" value="@DateTime.Now" readonly />
                 <span asp-validation-for="DeskQuote.QuoteDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DeskQuote.QuoteTotal" class="control-label"></label>
-                <input asp-for="DeskQuote.QuoteTotal" class="form-control" />
-                <span asp-validation-for="DeskQuote.QuoteTotal" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="DeskQuote.Width" class="control-label"></label>
@@ -53,15 +48,20 @@
                 <input asp-for="DeskQuote.RushDays" class="form-control" />
                 <span asp-validation-for="DeskQuote.RushDays" class="text-danger"></span>
             </div>
+            <div class="form-group" style="display:none">
+                <label asp-for="DeskQuote.QuoteTotal" class="control-label"></label>
+                <input asp-for="DeskQuote.QuoteTotal" class="form-control" />
+                <span asp-validation-for="DeskQuote.QuoteTotal" class="text-danger"></span>
+            </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Add Quote" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="Index">Back to List</a>
+    <a asp-page="ViewAllQuotes">Back to List</a>
 </div>
 
 @section Scripts {

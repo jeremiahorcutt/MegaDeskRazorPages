@@ -20,10 +20,6 @@ namespace MegaDeskRazorPages.Models
         [Display(Name = "Date of Quote")]
         public DateTime QuoteDate { get; set; }
 
-        [Display(Name = "Total")]
-        [DataType(DataType.Currency)]
-        public double QuoteTotal { get; set; }
-
         [Range(24, 96)]
         public int Width { get; set; }
         [Range(12, 48)]
@@ -40,6 +36,10 @@ namespace MegaDeskRazorPages.Models
 
         [Display(Name = "Shipping Option")]
         public int RushDays { get; set; }
+
+        [Display(Name = "Total")]
+        [DataType(DataType.Currency)]
+        public double QuoteTotal { get; set; }
 
         //Constants
         public const int PRICE_BASE = 200;

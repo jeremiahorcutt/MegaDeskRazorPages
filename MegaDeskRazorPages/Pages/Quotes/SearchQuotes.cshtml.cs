@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,16 +10,16 @@ using MegaDeskRazorPages.Models;
 
 namespace MegaDeskRazorPages.Pages.Quotes
 {
-    public class IndexModel : PageModel
+    public class SearchQuotesModel : PageModel
     {
         private readonly MegaDeskRazorPages.Data.MegaDeskRazorPagesContext _context;
 
-        public IndexModel(MegaDeskRazorPages.Data.MegaDeskRazorPagesContext context)
+        public SearchQuotesModel(MegaDeskRazorPages.Data.MegaDeskRazorPagesContext context)
         {
             _context = context;
         }
 
-        public IList<DeskQuote> DeskQuote { get;set; }
+        public IList<DeskQuote> DeskQuote { get; set; }
 
         public async Task OnGetAsync()
         {

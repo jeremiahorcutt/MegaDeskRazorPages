@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,11 +10,11 @@ using MegaDeskRazorPages.Models;
 
 namespace MegaDeskRazorPages.Pages.Quotes
 {
-    public class CreateModel : PageModel
+    public class AddQuoteModel : PageModel
     {
         private readonly MegaDeskRazorPages.Data.MegaDeskRazorPagesContext _context;
 
-        public CreateModel(MegaDeskRazorPages.Data.MegaDeskRazorPagesContext context)
+        public AddQuoteModel(MegaDeskRazorPages.Data.MegaDeskRazorPagesContext context)
         {
             _context = context;
         }
@@ -38,7 +38,7 @@ namespace MegaDeskRazorPages.Pages.Quotes
             _context.DeskQuote.Add(DeskQuote);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./DisplayQuote");
         }
     }
 }
