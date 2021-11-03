@@ -18,10 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\lib\Images\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\lib\Images\Resolute.jpg" />
     <None Include="wwwroot\lib\Images\StoneDesk.jpg" />
   </ItemGroup>
