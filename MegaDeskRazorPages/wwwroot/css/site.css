@@ -2,6 +2,7 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
+  
   white-space: normal;
   text-align: center;
   word-break: break-all;
@@ -20,7 +21,7 @@ a {
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #0366d6;
-    background-color: #1b6ec2;
+    background-color: black;
     border-color: #1861ac;
 }
 
@@ -42,8 +43,8 @@ html {
     border-bottom: 1px solid #e5e5e5;
 }
 container1 {
-    width: 1000px;
-    height: 700px;
+    width: 500px;
+    height: 350px;
     margin-top: 200px;
 }
 container2 {
@@ -270,18 +271,19 @@ body {
 }
 
     .cb-slideshow2 li div h3 {
+        color: black;
         font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-        font-size: 240px;
-        padding: 0;
+        font-size: 180px;
+        padding-bottom: 10px;
         line-height: 200px;
     }
 
 .cb-slideshow2 li:nth-child(1) span {
-    background-image: url(https://images.fineartamerica.com/images-medium-large-5/3-womans-eye-kate-jacobsscience-photo-library.jpg);
+    background-image: url(https://c.stocksy.com/a/OPg500/z9/1354662.jpg);
 }
 
 .cb-slideshow2 li:nth-child(2) span {
-    background-image: url(https://images.fineartamerica.com/images-medium-large-5/3-womans-eye-kate-jacobsscience-photo-library.jpg);
+    background-image: url(https://c.stocksy.com/a/PPg500/z9/1354663.jpg);
     animation-delay: 6s;
 }
 
@@ -291,12 +293,12 @@ body {
 }
 
 .cb-slideshow2 li:nth-child(4) span {
-    background-image: url(https://images.fineartamerica.com/images-medium-large-5/3-womans-eye-kate-jacobsscience-photo-library.jpg);
+    background-image: url(https://c.stocksy.com/a/PPg500/z9/1354663.jpg);
     animation-delay: 18s;
 }
 
 .cb-slideshow2 li:nth-child(5) span {
-    background-image: url(https://images.fineartamerica.com/images-medium-large-5/3-womans-eye-kate-jacobsscience-photo-library.jpg);
+    background-image: url(https://c.stocksy.com/a/OPg500/z9/1354662.jpg);
     animation-delay: 24s;
 }
 
