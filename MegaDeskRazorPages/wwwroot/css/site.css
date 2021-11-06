@@ -97,37 +97,37 @@ container2 {
 
         .cb-slideshow li div h3 {
             font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-            font-size: 240px;
-            padding: 0;
-            line-height: 200px;
+            font-size: 75px;
+            padding-left: 200px;
+            line-height: 100px;
         }
 
 .cb-slideshow li:nth-child(1) span {
-    background-image: url(https://media.istockphoto.com/photos/modern-presentation-background-picture-id1215185063?k=20&m=1215185063&s=170667a&w=0&h=MvjuV0gnatIMvsBqQCyxU3XLKT6TTk4gEoEc6WgTq9g=);
+    background-image: url(https://m.media-amazon.com/images/I/61vysAVtFBL._AC_SL1406_.jpg);
 }
 
 .cb-slideshow li:nth-child(2) span {
-    background-image: url(https://media.istockphoto.com/photos/modern-presentation-background-picture-id1215185067?k=20&m=1215185067&s=170667a&w=0&h=-Mmb8htyLMQ_AllHr24Gd5Jw7ccUizkt2pkLpgmjU6M=);
+    background-image: url(https://cdn.thewirecutter.com/wp-content/uploads/2018/09/04-tape-measure-lixer-caliber.jpg);
     animation-delay: 6s;
 }
 
 .cb-slideshow li:nth-child(3) span {
-    background-image: url(https://media.istockphoto.com/photos/modern-presentation-background-picture-id1215185049?k=20&m=1215185049&s=170667a&w=0&h=C44OWXx8HvbLu9Ty6LQX1yUUF9T_11HIirtjurifdIA=);
+    background-image: url(https://cdn.shopify.com/s/files/1/0423/7901/8398/products/439eb06032bac09ee49378de61f2369e_1200x850.jpg?v=1593817500);
     animation-delay: 12s;
 }
 
 .cb-slideshow li:nth-child(4) span {
-    background-image: url(https://media.istockphoto.com/photos/modern-presentation-background-picture-id1215185063?k=20&m=1215185063&s=170667a&w=0&h=MvjuV0gnatIMvsBqQCyxU3XLKT6TTk4gEoEc6WgTq9g=);
+    background-image: url(https://tabletopics.biz/wp-content/uploads/2016/03/rosewood-blog.png);
     animation-delay: 18s;
 }
 
 .cb-slideshow li:nth-child(5) span {
-    background-image: url(https://media.istockphoto.com/photos/modern-presentation-background-picture-id1215185067?k=20&m=1215185067&s=170667a&w=0&h=-Mmb8htyLMQ_AllHr24Gd5Jw7ccUizkt2pkLpgmjU6M=);
+    background-image: url(https://newsroom.fedex.com/wp-content/uploads/2021/07/FedEx_Pic-1.jpg);
     animation-delay: 24s;
 }
 
 .cb-slideshow li:nth-child(6) span {
-    background-image: url(https://media.istockphoto.com/photos/modern-presentation-background-picture-id1215185049?k=20&m=1215185049&s=170667a&w=0&h=C44OWXx8HvbLu9Ty6LQX1yUUF9T_11HIirtjurifdIA=);
+    background-image: url(https://www.airfreight-logistics.com/wp-content/uploads/2020/03/ups-us-flights-496157.jpg);
     animation-delay: 30s;
 }
 
