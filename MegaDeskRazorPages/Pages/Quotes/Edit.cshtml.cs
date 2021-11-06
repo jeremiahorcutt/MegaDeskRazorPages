@@ -26,7 +26,6 @@ namespace MegaDeskRazorPages.Pages.Quotes
         [BindProperty]
         public Desk Desk { get; set; }
 
-
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
@@ -40,6 +39,7 @@ namespace MegaDeskRazorPages.Pages.Quotes
             {
                 return NotFound();
             }
+
             return Page();
         }
 
