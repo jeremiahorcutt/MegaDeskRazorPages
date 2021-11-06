@@ -18,12 +18,34 @@ namespace MegaDeskRazorPages.Pages.Quotes
         {
             _context = context;
         }
-
+        public string CustomerSort { get; set; }
+        public string DateSort { get; set; }
         public IList<DeskQuote> DeskQuote { get; set; }
 
-        public async Task OnGetAsync()
+        public async Task OnGetAsync(string sortOrder)
         {
-            DeskQuote = await _context.DeskQuote.ToListAsync();
+            CustomerSort = String.IsNullOrEmpty(sortOrder) ? "cust_desc" : "";
+            DateSort = sortOrder == "Date" ? "date_desc" : "Date";
+            var quotes = from q in _context.DeskQuote
+                         select q;
+
+            switch (sortOrder)
+            {
+                case "cust_desc":
+                    quotes = quotes.OrderBy(s => s.CustomerName);
+                    break;
+                case "Date":
+                    quotes = quotes.OrderBy(s => s.QuoteDate);
+                    break;
+                case "date_desc":
+                    quotes = quotes.OrderByDescending(s => s.QuoteDate);
+                    break;
+                default:
+                    quotes = quotes.OrderByDescending(s => s.CustomerName);
+                    break;
+            }
+
+            DeskQuote = await quotes.AsNoTracking().ToListAsync();
         }
     }
 }
