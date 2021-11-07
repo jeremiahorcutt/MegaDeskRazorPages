@@ -8,6 +8,16 @@
 <h1>Search Quotes</h1>
 
 <hr />
+<form asp-page="./SearchQuotes" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Find by Customer Name:
+            <input type="text" name="SearchString" value="@Model.CurrentFilter" />
+            <input type="submit" value="Search" class="btn btn-primary" /> |
+            <a asp-page="./SearchQuotes">Back to full List</a>
+        </p>
+    </div>
+</form>
 <table class="table">
     <thead>
         <tr>
@@ -76,4 +86,44 @@
 </table>
 <div>
     <a asp-page="../Index">Home</a>
+</div>
+<div class="container2">
+    <ul class="cb-slideshow2" style="list-style: none;">
+        <li>
+            <span>Image 01</span>
+            <div>
+                <h3>Searching</h3>
+            </div>
+        </li>
+        <li>
+            <span>Image 02</span>
+            <div>
+                <h3>Searching</h3>
+            </div>
+        </li>
+        <li>
+            <span>Image 03</span>
+            <div>
+                <h3>Searching</h3>
+            </div>
+        </li>
+        <li>
+            <span>Image 04</span>
+            <div>
+                <h3>Searching</h3>
+            </div>
+        </li>
+        <li>
+            <span>Image 05</span>
+            <div>
+                <h3>Searching</h3>
+            </div>
+        </li>
+        <li>
+            <span>Image 06</span>
+            <div>
+                <h3>Searching</h3>
+            </div>
+        </li>
+    </ul>
 </div>

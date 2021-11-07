@@ -5,39 +5,40 @@
     ViewData["Title"] = "AddQuote";
 }
 
-<h1>Add New Quote</h1>
+    <h1>Add New Quote</h1>
 
-<h4>Desk Parameters</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="DeskQuote.CustomerName" class="control-label"></label>
-                <input asp-for="DeskQuote.CustomerName" class="form-control" />
-                <span asp-validation-for="DeskQuote.CustomerName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DeskQuote.QuoteDate" class="control-label"></label>
-                <input asp-for="DeskQuote.QuoteDate" class="form-control" type="datetime" value="@DateTime.Now" readonly />
-                <span asp-validation-for="DeskQuote.QuoteDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DeskQuote.Width" class="control-label"></label>
-                <input asp-for="DeskQuote.Width" class="form-control" />
-                <span asp-validation-for="DeskQuote.Width" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DeskQuote.Depth" class="control-label"></label>
-                <input asp-for="DeskQuote.Depth" class="form-control" />
-                <span asp-validation-for="DeskQuote.Depth" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DeskQuote.NumberOfDrawers" class="control-label"></label>
-                <input asp-for="DeskQuote.NumberOfDrawers" class="form-control" />
-                <span asp-validation-for="DeskQuote.NumberOfDrawers" class="text-danger"></span>
-            </div>
+    <h4>Desk Parameters</h4>
+    <hr />
+
+    <div>
+        <div class="col-md-4">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="DeskQuote.CustomerName" class="control-label"></label>
+                    <input asp-for="DeskQuote.CustomerName" class="form-control" />
+                    <span asp-validation-for="DeskQuote.CustomerName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DeskQuote.QuoteDate" class="control-label"></label>
+                    <input asp-for="DeskQuote.QuoteDate" class="form-control" type="datetime" value="@DateTime.Now" readonly />
+                    <span asp-validation-for="DeskQuote.QuoteDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DeskQuote.Width" class="control-label"></label>
+                    <input asp-for="DeskQuote.Width" class="form-control" />
+                    <span asp-validation-for="DeskQuote.Width" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DeskQuote.Depth" class="control-label"></label>
+                    <input asp-for="DeskQuote.Depth" class="form-control" />
+                    <span asp-validation-for="DeskQuote.Depth" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DeskQuote.NumberOfDrawers" class="control-label"></label>
+                    <input asp-for="DeskQuote.NumberOfDrawers" class="form-control" />
+                    <span asp-validation-for="DeskQuote.NumberOfDrawers" class="text-danger"></span>
+                </div>
             <div>
                 <label asp-for="DeskQuote.DeskMaterial" class="control-label"></label><br />
                 <select asp-for="DeskQuote.DeskMaterial">
@@ -60,16 +61,46 @@
                 </select>
                 <span asp-validation-for="DeskQuote.RushDays" class="text-danger"></span>
             </div><br />
-            <div class="form-group">
-                <input type="submit" value="Add Quote" class="btn btn-primary" />
+                <div class="form-group">
+                    <input type="submit" value="Add Quote" class="btn btn-primary" />
 
-            </div>
-        </form>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
+
 
 <div>
     <a asp-page="../Index">Home</a>
+</div>
+
+<div class="container1">
+    <ul class="cb-slideshow" style="list-style: none;">
+        <li>
+            <span>Image 01</span>
+            
+        </li>
+        <li>
+            <span>Image 02</span>
+            
+        </li>
+        <li>
+            <span>Image 03</span>
+           
+        </li>
+        <li>
+            <span>Image 04</span>
+            
+        </li>
+        <li>
+            <span>Image 05</span>
+            
+        </li>
+        <li>
+            <span>Image 06</span>
+            
+        </li>
+    </ul>
 </div>
 
 @section Scripts {
