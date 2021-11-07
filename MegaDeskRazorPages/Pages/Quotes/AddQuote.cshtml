@@ -39,16 +39,28 @@
                     <input asp-for="DeskQuote.NumberOfDrawers" class="form-control" />
                     <span asp-validation-for="DeskQuote.NumberOfDrawers" class="text-danger"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="DeskQuote.DeskMaterial" class="control-label"></label>
-                    <input asp-for="DeskQuote.DeskMaterial" class="form-control" />
-                    <span asp-validation-for="DeskQuote.DeskMaterial" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="DeskQuote.RushDays" class="control-label"></label>
-                    <input asp-for="DeskQuote.RushDays" class="form-control" />
-                    <span asp-validation-for="DeskQuote.RushDays" class="text-danger"></span>
-                </div>
+            <div>
+                <label asp-for="DeskQuote.DeskMaterial" class="control-label"></label><br />
+                <select asp-for="DeskQuote.DeskMaterial">
+                    <option value="">Desk Material</option>
+                    <option value="Pine">Pine</option>
+                    <option value="Laminate">Laminate</option>
+                    <option value="Veneer">Veneer</option>
+                    <option value="Oak">Oak</option>
+                    <option value="Rosewood">Rosewood</option>
+                </select>
+                <span asp-validation-for="DeskQuote.DeskMaterial" class="text-danger"></span>
+            </div><br />
+            <div>
+                <label asp-for="DeskQuote.RushDays" class="control-label"></label><br />
+                <select asp-for="DeskQuote.RushDays">
+                    <option value="">Shipping Option</option>
+                    <option value="7">Standard</option>
+                    <option value="3">Three Day</option>
+                    <option value="5">Five Day</option>
+                </select>
+                <span asp-validation-for="DeskQuote.RushDays" class="text-danger"></span>
+            </div><br />
                 <div class="form-group">
                     <input type="submit" value="Add Quote" class="btn btn-primary" />
 
